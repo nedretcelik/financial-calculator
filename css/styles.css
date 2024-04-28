@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.first-cont {
+    background-color:#fee4c9;
+
+}
+
+.first-cont p {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.breadcrumb-color a{
+    color:#367b48;
+}
+
+.home-icon {
+    color: #e0afee;
+}
+
+.col-space {
+    margin-top: 20px;
+}
+
+.col-space a {
+    color: #367b48;
+}
+
+.money-icon {
+    color: #51c800;
+}
+
+.car-icon {
+    color: #1f9dc2;
+}
+
+.calculator-icon {
+    color: #fb5f00;
+}
+
+.morgage-page {
+    background-color: #e2ceed;
+}
+
+.morgage-page p {
+    font-size: 30px;
+    font-weight: 200;
+}
