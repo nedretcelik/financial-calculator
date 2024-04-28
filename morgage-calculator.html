@@ -66,26 +66,26 @@
                   </div>
                 </div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col">
                             <form class="p-5" style="border: 1px solid lightgray; height: 450px;">
                                 <label for="exampleInputEmail1" class="form-label">Desired home loan amount</label>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input id="principalInput" type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                                 <label for="exampleInputEmail1" class="form-label">Desired home loan term</label>
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text" id="basic-addon1">Year</span>
+                                    <input id="yearInput" type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                                 <label for="exampleInputEmail1" class="form-label">Estimated interest rate</label>
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text" id="basic-addon1">%</span>
+                                    <input id="interestRateInput" type="text" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-success" type="button">Calculate</button>
+                                    <button id="calculateBtn" class="btn btn-success" type="button">Calculate</button>
                                 </div>
                                     
                               </form>
@@ -94,22 +94,21 @@
                             <form class="p-5" style="border: 1px solid lightgray; text-align: center; height: 450px; background-color: #e0afee;">
                                 <div class="row">
                                     <h4>Your estimated monthly payment</h4>
-                                    <p>$495.09</p>
+                                    <p id="monthlyPayment"><span>$</span>0</p>
                                 </div>
                                 <div class="row">
                                     <h4>Total principal paid</h4>
-                                    <p>$53,000.00</p>
+                                    <p id="totalPrincipal"><span>$</span>0</p>
                                 </div>
                                 <div class="row">
-                                    <h4>Total interest paidt</h4>
-                                    <p>$36,115.99</p>
+                                    <h4>Total interest paid</h4>
+                                    <p id="interestPaid"><span>$</span>0</p>
                                 </div>
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-success" type="button">Compare home loans</button>
-                                    <button class="btn btn-outline-light" type="button" style="color: green; border: 1px solid lightgray;">Start over</button>
+                                    <button id="startOverBtn" class="btn btn-outline-light" type="button" style="color: green; border: 1px solid lightgray;">Start over</button>
                                 </div>
                             </form>
-                            
                         </div>
                     </div>
                 </div>
@@ -118,6 +117,10 @@
             <!-- place footer here -->
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+
+        <script src="./scripts/morgage-calculator.js"></script>
+
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
