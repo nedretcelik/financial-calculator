@@ -1,13 +1,36 @@
 
 function init() {
     const calculateDepositBtn = document.getElementById("calculateDepositBtn");
+    const startOverBtn = document.getElementById("startOverBtn");
 
     calculateDepositBtn.onclick = calculationOfCD;
+    
+    startOverBtn.onclick = startOver;
 
 
 }
 
 window.onload = init;
+
+function startOver() {
+    const initialDepositInput = document.getElementById("initialDepositInput");
+    const yearsInput = document.getElementById("yearsInput");
+    const interestRateInput = document.getElementById("interestRateInput");
+    let totalBalance = document.getElementById("totalBalance");
+    let totalInterestEarned = document.getElementById("totalInterestEarned");
+
+
+    initialDepositInput.value = "";
+    yearsInput.value = "";
+    interestRateInput.value = "";
+
+    totalBalance.innerText = "$0";
+    totalInterestEarned.innerText = "$0";
+    
+
+
+}
+
 
 function calculationOfCD() {
     const initialDepositInput = Number(document.getElementById("initialDepositInput").value);
@@ -16,28 +39,22 @@ function calculationOfCD() {
     let totalBalance = document.getElementById("totalBalance");
     let totalInterestEarned = document.getElementById("totalInterestEarned");
 
-    const months = yearsInput *12;
-    const interestRate = interestRateInput /100;
+    // const months = yearsInput *12;
+    const interestRate = interestRateInput / 100;
 
-    let totalBalanceCalculation = initialDepositInput *( Math.pow((1+interestRate),yearsInput));
+    let totalBalanceCalculation = initialDepositInput *(Math.pow((1+interestRate),yearsInput));
     let totalInterestEarnedCalculation=  totalBalanceCalculation - initialDepositInput;
+
+    debugger
 
     totalBalance.innerText = totalBalanceCalculation.toFixed(2);
     totalInterestEarned.innerText = totalInterestEarnedCalculation.toFixed(2);
 
-    debugger
+    
     console.log(totalBalanceCalculation);
 
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -68,3 +85,5 @@ InterestEarned=FV−P
 InterestEarned=$1,092.62−$1,000
 
  */
+
+
