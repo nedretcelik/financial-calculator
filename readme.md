@@ -5,18 +5,18 @@
 
 #### Calculators Page
 
-![alt text](financial-calculator-ss.html.png)
+![alt text](./image/financial-calculator-ss.html.png)
 
 
 #### Morgage Calculator Page
 
-![alt text](morgage-page-ss.html.png)
+![alt text](./image/morgage-page-ss.html.png)
 
 #### CD Calculator Page
 
-![alt text](cd-calculator-ss.html.png)
+![alt text](/image/cd-calculator-ss.html.png)
 
 
 #### Annuity Calculator Page
 
-![alt text](annuity-ss.html.png)
+![alt text](./image/annuity-ss.html.png)
