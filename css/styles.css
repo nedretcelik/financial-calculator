@@ -1,62 +1,62 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
+body {
+  font-family: Sailec, "helvetica neue", helvetica, -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui",
+    arial, sans-serif;
+}
 
 .first-cont {
-    background-color:#efe8ed;
-
+  background-color: #efe8ed;
 }
 
 .first-cont p {
-    font-size: 30px;
-    font-weight: 200;
+  font-size: 30px;
+  font-weight: 200;
 }
 
-.breadcrumb-color a{
-    color:#367b48;
+.breadcrumb-color a {
+  color: #367b48;
 }
 
 .home-icon {
-    color: #e0afee;
+  color: #e0afee;
 }
 
 .col-space {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .col-space a {
-    color: #367b48;
+  color: #367b48;
 }
 
 .money-icon {
-    color: #51c800;
+  color: #51c800;
 }
 
 .car-icon {
-    color: #1f9dc2;
+  color: #1f9dc2;
 }
 
 .calculator-icon {
-    color: #fb5f00;
+  color: #fb5f00;
 }
 
 .morgage-page {
-    background-color: #e2ceed;
+  background-color: #e2ceed;
 }
 
 .morgage-page p {
-    font-size: 30px;
-    font-weight: 200;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .cd-page {
-    background-color:#c8e4ce;
+  background-color: #c8e4ce;
 }
 
-
 .annuity-page {
-    background-color: aliceblue;
-
+  background-color: aliceblue;
 }
