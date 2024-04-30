@@ -1,6 +1,6 @@
 # Workshops - 1 Financial Calculators
 
-#### Inspired by creditkarma.com
+#### Clone of creditkarma.com
 
 
 #### Calculators Page
